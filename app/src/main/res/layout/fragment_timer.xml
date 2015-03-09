@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/timer_horizontal_padding"
+    android:paddingRight="@dimen/timer_horizontal_padding"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    style="@style/FragmentStyle">
+
+    <LinearLayout
+        android:id="@+id/TimerValueSection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5">
+
+            <TextView
+                android:id="@+id/Hour"
+                style="@style/TimerNumber" />
+
+            <TextView
+                android:text="H"
+                style="@style/TimerLabel" />
+
+            <TextView
+                android:id="@+id/Minute1"
+                style="@style/TimerNumber" />
+
+            <TextView
+                android:id="@+id/Minute2"
+                style="@style/TimerNumber" />
+
+            <TextView
+                android:text="M"
+                style="@style/TimerLabel" />
+
+            <TextView
+                android:id="@+id/Second1"
+                style="@style/TimerNumber"/>
+
+            <TextView
+                android:id="@+id/Second2"
+                style="@style/TimerNumber"/>
+
+            <TextView
+                android:id="@+id/SecondLabel"
+                android:text="S"
+                style="@style/TimerLabel" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/BackspaceButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_action_backspace"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/TimerInputSection"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <View style="@style/TimerDivider" />
+
+        <LinearLayout style="@style/TimerInputSection">
+
+            <TextView
+                android:id="@+id/OneButton"
+                android:text="1"
+                style="@style/TimerInput" />
+
+            <TextView
+                android:id="@+id/TwoButton"
+                android:text="2"
+                style="@style/TimerInput" />
+
+            <TextView
+                android:id="@+id/ThreeButton"
+                android:text="3"
+                style="@style/TimerInput" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/TimerInputSection">
+
+            <TextView
+                android:id="@+id/FourButton"
+                android:text="4"
+                style="@style/TimerInput" />
+
+            <TextView
+                android:id="@+id/FiveButton"
+                android:text="5"
+                style="@style/TimerInput" />
+
+            <TextView
+                android:id="@+id/SixButton"
+                android:text="6"
+                style="@style/TimerInput" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/TimerInputSection">
+
+            <TextView
+                android:id="@+id/SevenButton"
+                android:text="7"
+                style="@style/TimerInput" />
+
+            <TextView
+                android:id="@+id/EightButton"
+                android:text="8"
+                style="@style/TimerInput" />
+
+            <TextView
+                android:id="@+id/NineButton"
+                android:text="9"
+                style="@style/TimerInput" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/TimerInputSection">
+
+            <TextView
+                android:id="@+id/ZeroButton"
+                android:text="0"
+                style="@style/TimerInput" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View style="@style/TimerDivider" />
+
+    <TextView
+        android:id="@+id/StartStopButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="START"
+        android:gravity="center"
+        android:textSize="40dp" />
+
+</LinearLayout>

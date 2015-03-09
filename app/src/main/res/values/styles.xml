@@ -1,0 +1,52 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar" />
+
+    <style name="FragmentStyle">
+        <item name="android:background">#687394</item>
+    </style>
+
+    <style name="SeekBarStyle">
+        <item name="android:thumb">@drawable/thumb</item>
+    </style>
+
+    <style name="TimerNumber">
+        <item name="android:textSize">70sp</item>
+        <item name="android:text">0</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TimerLabel">
+        <item name="android:textSize">30sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TimerInput">
+        <item name="android:textSize">60sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TimerInputSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/timer_input_horizontal_padding</item>
+        <item name="android:paddingRight">@dimen/timer_input_horizontal_padding</item>
+    </style>
+
+    <style name="TimerDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/background_dark</item>
+        <item name="android:paddingTop">@dimen/timer_divider_padding</item>
+        <item name="android:paddingBottom">@dimen/timer_divider_padding</item>
+    </style>
+
+</resources>
