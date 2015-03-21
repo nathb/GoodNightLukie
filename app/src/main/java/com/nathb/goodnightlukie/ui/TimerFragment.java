@@ -68,6 +68,11 @@ public class TimerFragment extends Fragment {
         mTimerValues.add(mHourView);
         mTimerManager.addListener(mTimerFinishedListener);
         updateDisplayMode();
+
+        if (mTimerManager.isTimerRunning()) {
+            mHandler.post(mUpdateDurationRunnable);
+        }
+
         return view;
     }
 
@@ -106,7 +111,7 @@ public class TimerFragment extends Fragment {
     }
 
     @OnClick(R.id.StartStopButton)
-    void startTimer() {
+    void toggleTimer() {
         if (mTimerManager.isTimerRunning()) {
             mSoundManager.stop();
             mTimerManager.stopTimer();
